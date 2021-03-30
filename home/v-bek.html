@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+<meta name="theme-color" content="#ffffff">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!-- font google -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- mycss -->
+    <link rel="stylesheet" href="stylee.css">
+<!-- bootstrap-icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    
+    <title>V-Bek</title>
+  </head>
+  <body id="home">
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">V-Bek</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#info">Informasi Vaksin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#persyaratan">Persyaratan</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#tentang">Tentang</a>
+        </li>
+        <li class="nav-item">
+          <!-- <a class="nav-link btn-clr" href="#tentang">masuk</a> -->
+          <button class="btn btn-primary">Masuk</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- akhir navbar -->
+
+<!-- jumbotron -->
+<div class="jumbotron">
+  <div class="container justify-content-md-center">
+      <div class="row ">
+        <div class="col-xs-12 col-lg-7 justify-content-center flex-column align-items-center my-5 my-md-8">
+          <div class="fs-3 fs-md-1 fw-bold">Lindungi Diri Anda Dan Selamatkan Dunia</div>
+          <p class="fw-normal fs-5">
+          Segera vaksin dan bantu pemerintah untuk membsmi covid di vaksin tidak akan membuat anda miskin. 
+          </p>
+          <!-- <button type="button" class="col-3 align-self-start btn btn-primary">Baca</button> -->
+        </div>
+        <div class="col-xs-12 d-none d-md-block col-lg-5 d-none d-md-none d-lg-block">
+          <img class="img-fluid" src="assets/doctor-01.svg" alt="">
+        </div>
+  </div>
+  </div>
+</div>
+      <!-- akhir jumbotron -->
+
+      <!-- form -->
+  <section class=" formm my-3" id="info">
+    <div class="container">
+      <div class="row bg-body rounded">
+        <div class="col">
+          <div class="fw-bold fs-3 fs-md-1">Cek Data anda</div>
+        </div>
+      </div>
+      <div class="row ps-3 pt-3 shadow-lg p-3">
+        <div class="col-md-5">
+            <label class="sr-only fw-bolder mb-1">Nama</label>
+            <input type="text" class="form-control mb-2 name"  placeholder="Joe Biden">
+        </div>
+        <div class="col-md-5">
+            <label class="sr-only  fw-bolder mb-1">NIK</label>
+            <input type="number" maxlength="12" class="nik form-control mb-2" placeholder="320 1234 191967 0001">
+        </div>
+        <div class=" cari col-md-2">
+            <button type="submit" class="btn btn-primary mb-2 mybtn" >Cari</button>
+        </div>
+        </div>
+        <div class="row pt-3 shadow-lg p-3 mt-4 mb-5 bg-body rounded">
+          <div class="card result">
+          </div>
+        </div>
+  </section>
+  <!-- akhir table -->
+
+  <!-- table -->
+    <section class="pt-4">
+      <div class="container ">
+        <div class="row">
+          <div class="col">
+
+            <div class="table-responsive">
+              <table class="table">
+                <thead class="table-dark">
+                  <tr>
+                    <th>No</th>
+                    <th>Kecamatan</th>
+                    <th>Status</th>
+                    <th>Jumlah</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>Bekasi Barat</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">20.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>Bekasi Timur</td>
+                    <td><span class="badge bg-warning">Diperjalanan</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">75.858</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>Bekasi Utara</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">34.500</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>Bekasi Selatan</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00c0ef" data-height="20">40.500</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>Pondok Gede</td>
+                    <td><span class="badge bg-warning">Diperjalanan</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f39c12" data-height="20">50.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>Bantar Gebang</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#f56954" data-height="20">63.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>Mustikajaya</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">98.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Jatiasih</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">97.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Jatisampurna</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">68.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Medansatria</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">32.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Pondokmelati</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">38.000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Rawalumbu</td>
+                    <td><span class="badge bg-success">Diterima</span></td>
+                    <td>
+                      <div class="sparkbar" data-color="#00a65a" data-height="20">18.000</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- status pengiriman -->
+    <!-- <div class="container mt-5">
+      <div class="fs-3 fw-bold fs-md-1 text-center text-md-start  fw-medium">Status Pengiriman Vaksin</div>
+      <div class="d-flex flex-md-row text-center justify-content-center flex-column">
+        <div class="rounded sudah py-3 px-5 m-3">Pusat</div>
+        <i class="bi py-3 fs-2 d-none d-md-block bi-arrow-right"></i> <i class="py-1 fs-2 d-md-none bi bi-arrow-down"></i>
+        <div class="rounded sudah py-3 px-5 m-3">Provinsi</div>
+        <i class="bi py-3 fs-2 d-none d-md-block bi-arrow-right"></i> <i class="py-1 fs-2 d-md-none bi bi-arrow-down"></i>
+        <div class="rounded sudah py-3 px-5 m-3">Kabupaten</div>
+        <i class="bi py-3 fs-2 d-none d-md-block bi-arrow-right"></i> <i class="py-1 fs-2 d-md-none bi bi-arrow-down"></i>
+        <div class="rounded belum py-3 px-5 m-3">Kecamatan</div>
+      </div>
+      <div class="row"></div>
+    </div> -->
+    
+
+    <!-- more info about vaccine -->
+<section id="persyaratan">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="container justify-content-md-center my-1">
+          <div class="row ">
+            <img src="assets/Covid-swab.svg" class="img-fluid col-xs-12 col-lg-5" alt="people check vaccine">
+            <div class="col-xs-12 col-lg-7 d-flex justify-content-center flex-column align-items-center my-5 my-md-3">
+              <div class="col-12 fs-3 fw-bold fs-md-1">Syarat Penggunaan Vaksin</div>
+              <p class="fw-normal fs-6">Pelaksanaan vaksinasi COVID-19 bertujuan untuk memutus rantai penularan penyakit dan menghentikan wabah COVID-19. Vaksin COVID-19 bermanfaat untuk memberi perlindungan tubuh agar tidak jatuh sakit akibat COVID-19 dengan cara menimbulkan atau menstimulasi kekebalan spesifik dalam tubuh dengan pemberian vaksin.</p>
+              <p class="fw-normal fs-6">Pelayanan vaksinasi COVID-19 dilakukan oleh dokter, perawat atau bidan yang memiliki kompetensi dan dilaksanakan di Fasilitas Pelayanan Kesehatan milik Pemerintah Pusat, Pemerintah Daerah Provinsi, Pemerintah Daerah Kabupaten/Kota atau milik masyarakat/swasta yang memenuhi persyaratan yang sudah ditentukan oleh Kementerian Kesehatan Indonesia.</p>
+              <p class="fw-normal fs-6">Pada tahap awal ini, vaksin COVID-19 akan diberikan kepada seluruh Tenaga Kesehatan, Asisten Tenaga Kesehatan, Tenaga penunjang serta mahasiswa yang menjalankan pendidikan profesi kedokteran yang bekerja pada fasilitas pelayanan kesehatan. Vaksin akan diberikan kepada petugas pelayanan publik yang terlibat secara langsung memberikan pelayanan kepada masyarakat.</p>             
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- about -->
+<section id="tentang">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="container justify-content-md-center my-1">
+          <div class="row ">
+            <div class="order-2 order-lg-1 col-xs-12 col-lg-7 d-flex justify-content-center flex-column align-items-center my-5 my-md-3">
+              <div class="col-12 fs-3 fw-bold fs-md-1">Apa Itu V-Bek?</div>
+              <p class="fw-normal fs-6">V-Bek adalah Website yang dikembangkan untuk membantu masyarakat mendapatkan informasi terkait vaksinasi di Kota Bekasi.</p>
+        <p class="fw-normal fs-6">Di dalam website ini warga bisa mengetahui berapa banyak kota bekasi mendapatkan vaksinasi, selain kota dapat dilihat juga setiap kelurahan mendapatkan berapa vaksin.</p>
+        <p class="fw-normal fs-6">Aplikasi ini mengandalkan partisipasi masyarakat untuk saling membagikan data lokasinya saat bepergian agar penelusuran riwayat kontak dengan penderita COVID-19 dapat dilakukan.</p>
+        <p class="fw-normal fs-6">Pengguna aplikasi ini juga akan mendapatkan notifikasi jika berada di keramaian atau berada di zona merah, yaitu area atau kelurahan yang sudah terdata bahwa ada orang yang terinfeksi COVID-19 positif atau ada Pasien Dalam Pengawasan.</p>
+            </div>
+            <img src="assets/confused.svg" class="order-1 order-lg-2 img-fluid col-xs-12 col-lg-5" alt="people check vaccine">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- footer -->
+    <footer class="p5"> 
+      <div class="container">
+      <div class="row m-0 d-flex flex-column flex-md-row align-items-center justify-content-evenly py-5 " >
+        
+        <div class="col-md-4 col-12 align-self-center text-center text-md-start pl-0 pl-md-5">
+          <img src="assets/logo.svg" class="img-size col-xs-12 col-lg-5  my-3" alt="people check vaccine" >
+        
+        </div>
+        <div class="col-md-8 col-12 text-center text-md-end ">
+          <a href=""><i class="bi bi-twitter text-dark p-3 p-md-5"></i></a>
+          <a href=""><i class="bi bi-facebook text-dark p-3 p-md-5"></i></a>
+          <a href=""><i class="bi bi-envelope text-dark p-3 p-md-5"></i></a>
+          <a href=""><i class="bi bi-instagram text-dark p-3 p-md-5"></i></a>
+          <a href=""><i class="bi bi-ui-radios text-dark p-3 p-md-5"></i></a>
+        </div>
+      </div>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script>
+      const btn = document.querySelector('.mybtn')
+      const inputValue = document.querySelector('.name')
+      const inputNik = document.querySelector('.nik')
+      const rst = document.querySelector('.result')
+      btn.addEventListener('click', result)
+      function result(){
+        rst.innerHTML = `
+        <div class="card-header text-center fw-bolder fs-3 fs-md-2 ">Status Program Vaksinasi Anda</div>
+        <ul class="list-group list-group-flush">
+              <li class="list-group-item fw-bolder fs-5 fs-md-3 fs-lg-1 ">Nama <span class="fs-5 fs-md-5 nama"> <i  class="bi bi-exclamation-circle fs-4 fs-md-3 fs-lg-1"></i>Tidak terdaftar</li>
+              <li class="list-group-item fst-normal fs-5 fs-md-3 fs-lg-1">${inputValue.value}</li>
+              <li class="list-group-item fw-bolder fs-5 fs-md-3 fs-lg-1">NIK</li>
+              <li class="list-group-item fst-normal fs-5 fs-md-3 fs-lg-1">${inputNik.value}</li>
+        </ul>
+        <div class="text-info ">Pastikan Anda mengisi data dengan benar, Jika data tidak ditemukan, Anda dapat menghubungi  <strong> CALL CENTER 119</strong></div>
+        `
+        //alert('ok')
+        console.log(inputValue.value)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,69 @@
+body{
+    font-family: 'Roboto', sans-serif;
+
+}
+.btn-vbek{
+    background-color: #99ADF9;
+    color: white;
+}
+.btn-vbek2{
+    background-color: #f7c029;
+    color: white;
+}
+.bg-form{
+    background-color: #99ADF9;
+    padding: 4em 3em;
+}
+.sudah{
+    background-color: #73FF50;
+    color: rgb(129, 123, 123);
+}
+.btn-clr{
+    font-size: 0.8em;
+    padding: 0.2em;
+    background-color: #0d6efd  ;
+}
+.belum{
+    background-color: #C4C4C4;
+    color: white;
+}
+.img-size{
+    width: 9em;
+    height: auto;
+}
+
+.social{
+    display: flex;
+    align-self: flex-start;
+}
+
+.jumbotron{
+    padding-top: 5rem ;
+}
+
+.result{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+
+.text-info{
+    font-size: 16px;
+}
+
+.formm{
+    padding-top: 40px;
+}
+.cari {
+    place-self: flex-end;
+}
+
+.p5 {
+    width: 100%;
+    background: #a8dadc;
+}
+
+.nama {
+    color:rgb(252, 45, 45); 
+    float:right;
+}
