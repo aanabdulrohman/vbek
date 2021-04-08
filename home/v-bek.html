@@ -13,50 +13,52 @@
     <!-- font google -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 <!-- mycss -->
-    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="style.css">
 <!-- bootstrap-icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
     <title>V-Bek</title>
   </head>
   <body id="home">
 <!-- navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-  <div class="container">
-    <a class="navbar-brand fw-bold" href="#">V-Bek</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#info">Informasi Vaksin</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#persyaratan">Persyaratan</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#tentang">Tentang</a>
-        </li>
-        <li class="nav-item">
-          <!-- <a class="nav-link btn-clr" href="#tentang">masuk</a> -->
-          <button class="btn btn-primary">Masuk</button>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <header class="header">
+
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a class="navbar-brand" href="#">V-Bek</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#info">Info Vaksin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#persyaratan">Trems Vaksin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tentang">About</a>
+              </li>
+            </ul>
+           <ul class="navbar-nav ml-auto">
+             <button class="btn btn-primary">Login</button>
+           </ul>
+          </div>
+        </div>
+      </nav>
+
+    </header>
 <!-- akhir navbar -->
 
 <!-- jumbotron -->
 <div class="jumbotron">
   <div class="container justify-content-md-center">
       <div class="row ">
-        <div class="col-xs-12 col-lg-7 justify-content-center flex-column align-items-center my-5 my-md-8">
-          <div class="fs-3 fs-md-1 fw-bold">Lindungi Diri Anda Dan Selamatkan Dunia</div>
+        <div style="align-self: center;" class="col-xs-12 col-lg-7 justify-content-center flex-column align-items-center my-5 my-md-8">
+          <div class="fs-3 fs-md-1 fw-bold">Protect yourself and save the world</div>
           <p class="fw-normal fs-5">
           Segera vaksin dan bantu pemerintah untuk membsmi covid di vaksin tidak akan membuat anda miskin. 
           </p>
@@ -71,16 +73,16 @@
       <!-- akhir jumbotron -->
 
       <!-- form -->
-  <section class=" formm my-3" id="info">
+  <section class=" my-3" id="info">
     <div class="container">
       <div class="row bg-body rounded">
         <div class="col">
-          <div class="fw-bold fs-3 fs-md-1">Cek Data anda</div>
+          <div class="fw-bold p-3 fs-3 fs-md-1">Check your Data</div>
         </div>
       </div>
       <div class="row ps-3 pt-3 shadow-lg p-3">
         <div class="col-md-5">
-            <label class="sr-only fw-bolder mb-1">Nama</label>
+            <label class="sr-only fw-bolder mb-1">Name</label>
             <input type="text" class="form-control mb-2 name"  placeholder="Joe Biden">
         </div>
         <div class="col-md-5">
@@ -88,7 +90,7 @@
             <input type="number" maxlength="12" class="nik form-control mb-2" placeholder="320 1234 191967 0001">
         </div>
         <div class=" cari col-md-2">
-            <button type="submit" class="btn btn-primary mb-2 mybtn" >Cari</button>
+            <button type="submit" class="btn btn-primary mb-2 mybtn" >Search</button>
         </div>
         </div>
         <div class="row pt-3 shadow-lg p-3 mt-4 mb-5 bg-body rounded">
@@ -99,117 +101,924 @@
   <!-- akhir table -->
 
   <!-- table -->
-    <section class="pt-4">
-      <div class="container ">
+    <section>
+      <div class="container  ">
         <div class="row">
           <div class="col">
-
             <div class="table-responsive">
               <table class="table">
                 <thead class="table-dark">
                   <tr>
                     <th>No</th>
-                    <th>Kecamatan</th>
-                    <th>Status</th>
-                    <th>Jumlah</th>
+                    <th>Districts</th>
+                    <th>Info</th>
+                    <th>Amount</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Bekasi Barat</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">20.000</div>
-                    </td>
+                    <td>Bekasi Barat</td> 
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="multiCollapseExample1">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Bintara
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      100.000
+                    </div>
+                  </td>
+
+                  <tr class="collapse multi-collapse" id="multiCollapseExample1">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Bintara jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="multiCollapseExample1">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Jakasampurna
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      100.000
+                    </div>
+                  </td>
+
+                  <tr class="collapse multi-collapse" id="multiCollapseExample1">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Kota Baru
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      100.000
+                    </div>
+                  
+                  </td>
+                  <tr class="collapse multi-collapse" id="multiCollapseExample1">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Kranji
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="multiCollapseExample1">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+                  <!-- bektim -->
                   <tr>
                     <td>2</td>
-                    <td>Bekasi Timur</td>
-                    <td><span class="badge bg-warning">Diperjalanan</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">75.858</div>
-                    </td>
+                    <td class="poptarget">Bekasi Timur</td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#bektim" role="button" aria-expanded="false" aria-controls="bektim">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="bektim">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Aren Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bektim">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Bekasi Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bektim">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Duren Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bektim">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Margahayu
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bektim">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+<!-- bekut -->
                   <tr>
                     <td>3</td>
                     <td>Bekasi Utara</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">34.500</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#bekut" role="button" aria-expanded="false" aria-controls="bekut">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="bekut">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Harapan Baru
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      100.000
+                    </div>
+                  </td>
+
+                  <tr class="collapse multi-collapse" id="bekut">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Harapan Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bekut">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Kaliabang Tengah
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bekut">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Marga Mulya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bekut">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Perwira
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bekut">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Teluk Pucung
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bekut">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- besal -->
                   <tr>
                     <td>4</td>
                     <td>Bekasi Selatan</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00c0ef" data-height="20">40.500</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#besal" role="button" aria-expanded="false" aria-controls="besal">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="besal">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Jakamulya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="besal">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Jakasetia
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="besal">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Kayuringin Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="besal">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Marga Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="besal">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Pekayon Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="besal">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- ponde -->
                   <tr>
                     <td>5</td>
                     <td>Pondok Gede</td>
-                    <td><span class="badge bg-warning">Diperjalanan</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f39c12" data-height="20">50.000</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#ponde" role="button" aria-expanded="false" aria-controls="ponde">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="ponde">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Jatibening
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="ponde">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Jatibening Baru
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="ponde">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Jaticempaka
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="ponde">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Jatimakmur
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="ponde">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Jatiwaringin
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="ponde">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- Bangeb -->
                   <tr>
                     <td>6</td>
                     <td>Bantar Gebang</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#f56954" data-height="20">63.000</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#bangeb" role="button" aria-expanded="false" aria-controls="bangeb">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="bangeb">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Bantargebang
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bangeb">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Ciketing Udiik
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bangeb">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Cikiwul
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="bangeb">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Sumur Batu
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="bangeb">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- musja -->
                   <tr>
                     <td>7</td>
                     <td>Mustikajaya</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">98.000</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#muska" role="button" aria-expanded="false" aria-controls="muska">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="muska">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Cimuning
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="muska">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Mustikajaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="muska">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Mustikasari
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="muska">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Padurenan
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="muska">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- Jatisih -->
                   <tr>
                     <td>8</td>
                     <td>Jatiasih</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">97.000</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#jatsih" role="button" aria-expanded="false" aria-controls="jatsih">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="jatsih">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Jatiasih
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsih">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Jatikramat
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsih">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Jatiluhur
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsih">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Jatimekar
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsih">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Jatirasa
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsih">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Jatisari
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsih">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- jatsam -->
                   <tr>
                     <td>9</td>
                     <td>Jatisampurna</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">68.000</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#jatsam" role="button" aria-expanded="false" aria-controls="jatsam">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="jatsam">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Jatikarya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsam">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Jatiraden
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsam">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Jatirangga
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsam">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Jatiranggon
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="jatsam">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Jatisampurna
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="jatsam">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- medsat -->
                   <tr>
                     <td>10</td>
-                    <td>Medansatria</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">32.000</div>
-                    </td>
+                    <td>Medan Satria</td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#medsat" role="button" aria-expanded="false" aria-controls="medsat">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="medsat">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Harapan Mulya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="medsat">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Kalibaru
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="medsat">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Medan Satria
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="medsat">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Pejuang
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="medsat">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- pomel -->
                   <tr>
                     <td>11</td>
-                    <td>Pondokmelati</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">38.000</div>
-                    </td>
+                    <td>Pondok Melati</td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#podmel" role="button" aria-expanded="false" aria-controls="podmel">Detail</span></a></td>
+                    <td>20.000</td>
                   </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="podmel">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Jatimelati
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="podmel">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Jatimurni
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="podmel">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Jatirahayu
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="podmel">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Jatiwarna
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="podmel">
+                      100.000
+                    </div>
+                  </td>
+                  </tr>
+
+                  <!-- rawalumbu -->
                   <tr>
                     <td>12</td>
                     <td>Rawalumbu</td>
-                    <td><span class="badge bg-success">Diterima</span></td>
-                    <td>
-                      <div class="sparkbar" data-color="#00a65a" data-height="20">18.000</div>
-                    </td>
+                    <td><span class="badge bg-success" <a data-bs-toggle="collapse" href="#rawlu" role="button" aria-expanded="false" aria-controls="rawlu">Detail</span></a></td>
+                    <td>20.000</td>
+                  </tr>
+                  <!-- desa -->
+                  <tr class="collapse multi-collapse" id="rawlu">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Bojong Menteng
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="rawlu">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Bojong Rawalumbu
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="rawlu">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Pengasinan
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      100.000
+                    </div>
+                  </td>
+                  <tr class="collapse multi-collapse" id="rawlu">
+                    <td></td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Sepeanjang Jaya
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      Diterima
+                    </div>
+                  </td>
+                    <td><div class="collapse multi-collapse" id="rawlu">
+                      100.000
+                    </div>
+                  </td>
                   </tr>
                 </tbody>
               </table>
@@ -218,26 +1027,10 @@
         </div>
       </div>
     </section>
-
-
-    <!-- status pengiriman -->
-    <!-- <div class="container mt-5">
-      <div class="fs-3 fw-bold fs-md-1 text-center text-md-start  fw-medium">Status Pengiriman Vaksin</div>
-      <div class="d-flex flex-md-row text-center justify-content-center flex-column">
-        <div class="rounded sudah py-3 px-5 m-3">Pusat</div>
-        <i class="bi py-3 fs-2 d-none d-md-block bi-arrow-right"></i> <i class="py-1 fs-2 d-md-none bi bi-arrow-down"></i>
-        <div class="rounded sudah py-3 px-5 m-3">Provinsi</div>
-        <i class="bi py-3 fs-2 d-none d-md-block bi-arrow-right"></i> <i class="py-1 fs-2 d-md-none bi bi-arrow-down"></i>
-        <div class="rounded sudah py-3 px-5 m-3">Kabupaten</div>
-        <i class="bi py-3 fs-2 d-none d-md-block bi-arrow-right"></i> <i class="py-1 fs-2 d-md-none bi bi-arrow-down"></i>
-        <div class="rounded belum py-3 px-5 m-3">Kecamatan</div>
-      </div>
-      <div class="row"></div>
-    </div> -->
     
 
     <!-- more info about vaccine -->
-<section id="persyaratan">
+<section id="persyaratan" >
   <div class="container">
     <div class="row">
       <div class="col">
@@ -245,10 +1038,10 @@
           <div class="row ">
             <img src="assets/Covid-swab.svg" class="img-fluid col-xs-12 col-lg-5" alt="people check vaccine">
             <div class="col-xs-12 col-lg-7 d-flex justify-content-center flex-column align-items-center my-5 my-md-3">
-              <div class="col-12 fs-3 fw-bold fs-md-1">Syarat Penggunaan Vaksin</div>
-              <p class="fw-normal fs-6">Pelaksanaan vaksinasi COVID-19 bertujuan untuk memutus rantai penularan penyakit dan menghentikan wabah COVID-19. Vaksin COVID-19 bermanfaat untuk memberi perlindungan tubuh agar tidak jatuh sakit akibat COVID-19 dengan cara menimbulkan atau menstimulasi kekebalan spesifik dalam tubuh dengan pemberian vaksin.</p>
-              <p class="fw-normal fs-6">Pelayanan vaksinasi COVID-19 dilakukan oleh dokter, perawat atau bidan yang memiliki kompetensi dan dilaksanakan di Fasilitas Pelayanan Kesehatan milik Pemerintah Pusat, Pemerintah Daerah Provinsi, Pemerintah Daerah Kabupaten/Kota atau milik masyarakat/swasta yang memenuhi persyaratan yang sudah ditentukan oleh Kementerian Kesehatan Indonesia.</p>
-              <p class="fw-normal fs-6">Pada tahap awal ini, vaksin COVID-19 akan diberikan kepada seluruh Tenaga Kesehatan, Asisten Tenaga Kesehatan, Tenaga penunjang serta mahasiswa yang menjalankan pendidikan profesi kedokteran yang bekerja pada fasilitas pelayanan kesehatan. Vaksin akan diberikan kepada petugas pelayanan publik yang terlibat secara langsung memberikan pelayanan kepada masyarakat.</p>             
+              <div class="col-12 pb-3  fs-3 fw-bold fs-md-1">Syarat Penggunaan Vaksin</div>
+              <p class="fw-normal text-rata fs-6">Pelaksanaan vaksinasi COVID-19 bertujuan untuk memutus rantai penularan penyakit dan menghentikan wabah COVID-19. Vaksin COVID-19 bermanfaat untuk memberi perlindungan tubuh agar tidak jatuh sakit akibat COVID-19 dengan cara menimbulkan atau menstimulasi kekebalan spesifik dalam tubuh dengan pemberian vaksin.</p>
+              <p class="fw-normal text-rata fs-6">Pelayanan vaksinasi COVID-19 dilakukan oleh dokter, perawat atau bidan yang memiliki kompetensi dan dilaksanakan di Fasilitas Pelayanan Kesehatan milik Pemerintah Pusat, Pemerintah Daerah Provinsi, Pemerintah Daerah Kabupaten/Kota atau milik masyarakat/swasta yang memenuhi persyaratan yang sudah ditentukan oleh Kementerian Kesehatan Indonesia.</p>
+              <p class="fw-normal text-rata fs-6">Pada tahap awal ini, vaksin COVID-19 akan diberikan kepada seluruh Tenaga Kesehatan, Asisten Tenaga Kesehatan, Tenaga penunjang serta mahasiswa yang menjalankan pendidikan profesi kedokteran yang bekerja pada fasilitas pelayanan kesehatan. Vaksin akan diberikan kepada petugas pelayanan publik yang terlibat secara langsung memberikan pelayanan kepada masyarakat.</p>             
             </div>
           </div>
         </div>
@@ -258,18 +1051,18 @@
 </section>
 
 <!-- about -->
-<section id="tentang">
+<section id="tentang" >
   <div class="container">
     <div class="row">
       <div class="col">
         <div class="container justify-content-md-center my-1">
           <div class="row ">
             <div class="order-2 order-lg-1 col-xs-12 col-lg-7 d-flex justify-content-center flex-column align-items-center my-5 my-md-3">
-              <div class="col-12 fs-3 fw-bold fs-md-1">Apa Itu V-Bek?</div>
+              <div class="col-12 fs-3 fw-bold fs-md-1 pb-3">Apa Itu V-Bek?</div>
               <p class="fw-normal fs-6">V-Bek adalah Website yang dikembangkan untuk membantu masyarakat mendapatkan informasi terkait vaksinasi di Kota Bekasi.</p>
-        <p class="fw-normal fs-6">Di dalam website ini warga bisa mengetahui berapa banyak kota bekasi mendapatkan vaksinasi, selain kota dapat dilihat juga setiap kelurahan mendapatkan berapa vaksin.</p>
-        <p class="fw-normal fs-6">Aplikasi ini mengandalkan partisipasi masyarakat untuk saling membagikan data lokasinya saat bepergian agar penelusuran riwayat kontak dengan penderita COVID-19 dapat dilakukan.</p>
-        <p class="fw-normal fs-6">Pengguna aplikasi ini juga akan mendapatkan notifikasi jika berada di keramaian atau berada di zona merah, yaitu area atau kelurahan yang sudah terdata bahwa ada orang yang terinfeksi COVID-19 positif atau ada Pasien Dalam Pengawasan.</p>
+        <p class="text-rata fw-normal fs-6">Di dalam website ini warga bisa mengetahui berapa banyak kota bekasi mendapatkan vaksinasi, selain kota dapat dilihat juga setiap kelurahan mendapatkan berapa vaksin.</p>
+        <p class="text-rata fw-normal fs-6">Aplikasi ini mengandalkan partisipasi masyarakat untuk saling membagikan data lokasinya saat bepergian agar penelusuran riwayat kontak dengan penderita COVID-19 dapat dilakukan.</p>
+        <p class="text-rata fw-normal fs-6">Pengguna aplikasi ini juga akan mendapatkan notifikasi jika berada di keramaian atau berada di zona merah, yaitu area atau kelurahan yang sudah terdata bahwa ada orang yang terinfeksi COVID-19 positif atau ada Pasien Dalam Pengawasan.</p>
             </div>
             <img src="assets/confused.svg" class="order-1 order-lg-2 img-fluid col-xs-12 col-lg-5" alt="people check vaccine">
           </div>
@@ -279,25 +1072,25 @@
   </div>
 </section>
 
-<!-- footer -->
-    <footer class="p5"> 
-      <div class="container">
-      <div class="row m-0 d-flex flex-column flex-md-row align-items-center justify-content-evenly py-5 " >
-        
-        <div class="col-md-4 col-12 align-self-center text-center text-md-start pl-0 pl-md-5">
-          <img src="assets/logo.svg" class="img-size col-xs-12 col-lg-5  my-3" alt="people check vaccine" >
-        
-        </div>
-        <div class="col-md-8 col-12 text-center text-md-end ">
-          <a href=""><i class="bi bi-twitter text-dark p-3 p-md-5"></i></a>
-          <a href=""><i class="bi bi-facebook text-dark p-3 p-md-5"></i></a>
-          <a href=""><i class="bi bi-envelope text-dark p-3 p-md-5"></i></a>
-          <a href=""><i class="bi bi-instagram text-dark p-3 p-md-5"></i></a>
-          <a href=""><i class="bi bi-ui-radios text-dark p-3 p-md-5"></i></a>
+<footer class="bg-light text-dark pt-5 pb-4">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+    
+    </div>
+      <div class="row d-flex justify-content-center">
+        <div>
+          <p>
+          Copyright 2021 All Rights Reserved By :
+          <a href="#" style="text-decoration: none;">
+          <strong class="text-info">V-Bek</strong>
+        </a>
+      </p>
         </div>
       </div>
+      
     </div>
-    </footer>
+  </div>
+</footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script>
@@ -308,12 +1101,12 @@
       btn.addEventListener('click', result)
       function result(){
         rst.innerHTML = `
-        <div class="card-header text-center fw-bolder fs-3 fs-md-2 ">Status Program Vaksinasi Anda</div>
+        <div class="card-header text-center fw-bold fs-5 ">Status Program Vaksinasi Anda</div>
         <ul class="list-group list-group-flush">
-              <li class="list-group-item fw-bolder fs-5 fs-md-3 fs-lg-1 ">Nama <span class="fs-5 fs-md-5 nama"> <i  class="bi bi-exclamation-circle fs-4 fs-md-3 fs-lg-1"></i>Tidak terdaftar</li>
-              <li class="list-group-item fst-normal fs-5 fs-md-3 fs-lg-1">${inputValue.value}</li>
-              <li class="list-group-item fw-bolder fs-5 fs-md-3 fs-lg-1">NIK</li>
-              <li class="list-group-item fst-normal fs-5 fs-md-3 fs-lg-1">${inputNik.value}</li>
+              <li class="text-result list-group-item fw-bolder  ">Nama <span class="text-result nama"> <i  class="bi bi-exclamation-circle text-result px-2"></i>Tidak terdaftar</li>
+              <li class="text-result list-group-item fst-normal ">${inputValue.value}</li>
+              <li class="text-result list-group-item fw-bolder ">NIK</li>
+              <li class="text-result list-group-item fst-normal ">${inputNik.value}</li>
         </ul>
         <div class="text-info ">Pastikan Anda mengisi data dengan benar, Jika data tidak ditemukan, Anda dapat menghubungi  <strong> CALL CENTER 119</strong></div>
         `
@@ -321,5 +1114,6 @@
         console.log(inputValue.value)
       }
     </script>
+    <script src="main.js"></script>
   </body>
 </html>
